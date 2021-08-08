@@ -1,0 +1,21 @@
+.log ul {
+    list-style-type: none;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.log .element {
+    font-size: small;
+    margin-right: 10px;
+}
+
+.log .title {
+    font-size: small;
+    font-weight: bold;
+    margin-right: 10px;
+}

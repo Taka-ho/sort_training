@@ -11,12 +11,12 @@ showLog(arrayToSort, 'ソート前'); // index.htmlへ表示
 // 自分でarrayToSortの中身を操作して、並べ替えの処理を記述する。
 // ---- start 
 const length = arrayToSort.length
+function makeSort(pointNumber,comparedNumber) {
+    makePoint();
 
-function makeSort() {
-    makePoint(pointNumber,comparedNumber);
-    console.log(makePoint())
-
+    
     arrayToSort = [];
+    
     for (i = 0; i = length*length; length++){
         //配列の最後と最後から二番目を比べて入れ替えるかどうかの処理を書く
         if (arrayToSort-comparedNumber < arrayToSort-pointNumber){
@@ -24,7 +24,7 @@ function makeSort() {
         }else if(arrayToSort-pointNumber < arrayToSort-comparedNumber){
 
         }
-        arrayToSort.push();
+        arrayToSort.push(/*この中にソートした配列を入れる*/);
     };
     return arrayToSort;
 }
@@ -33,13 +33,15 @@ function mekePoint(){
     //arrayTosort-1で一番最後の配列を指すので、その数字をループ文で作る
     var pointNumber = 1;
     for (pointNumber = 1; pointNumber = length; pointNumber++){
-        console.log(pointNumber);
+        
     }
     
     var comparedNumber = 2;
     for (comparedNumber = 2; comparedNumber = length-1; comparedNumber++){
     
     }
+    return comparedNumber,pointNumber;
+    
 }
 
 showLog(arrayToSort, 'ソート後'); // 結果を表示

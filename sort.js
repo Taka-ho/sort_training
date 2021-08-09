@@ -13,24 +13,27 @@ showLog(arrayToSort, 'ソート前'); // index.htmlへ表示
 const length = arrayToSort.length
 function makeSort(pointNumber,comparedNumber) {
     makePoint();
-
     
     arrayToSort = [];
-    
-    for (i = 0; i = length*length; length++){
-        //配列の最後と最後から二番目を比べて入れ替えるかどうかの処理を書く
+    //配列の最後と最後から二番目を比べて入れ替えるかどうかの処理を書く
+    for (sortTimes = 0; sortTimes = length*length; sortTimes++){
         if (arrayToSort-comparedNumber < arrayToSort-pointNumber){
-            //小さかった場合は入れ替えていく
-        }else if(arrayToSort-pointNumber < arrayToSort-comparedNumber){
 
-        }
-        arrayToSort.push(/*この中にソートした配列を入れる*/);
-    };
+        
+    //小さかった場合は入れ替えていく
+    }else if(arrayToSort-pointNumber < arrayToSort-comparedNumber){
+
+    }
+    arrayToSort.push(/*この中にソートした配列を入れる*/);
+
+    }
     return arrayToSort;
 }
 
-function mekePoint(){
-    //arrayTosort-1で一番最後の配列を指すので、その数字をループ文で作る
+showLog(arrayToSort, 'ソート後'); // 結果を表示
+
+function makePoint(){
+    //arrayToSort-1で一番最後の配列を指すので、その数字をループ文で増やしていく
     var pointNumber = 1;
     for (pointNumber = 1; pointNumber = length; pointNumber++){
         
@@ -40,8 +43,5 @@ function mekePoint(){
     for (comparedNumber = 2; comparedNumber = length-1; comparedNumber++){
     
     }
-    return comparedNumber,pointNumber;
-    
+    return pointNumber,comparedNumber;    
 }
-
-showLog(arrayToSort, 'ソート後'); // 結果を表示
